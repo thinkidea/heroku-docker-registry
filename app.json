@@ -9,7 +9,6 @@
         "registry"
     ],
     "addons": [
-        "newrelic",
         "heroku-postgresql"
     ],
     "env": {
