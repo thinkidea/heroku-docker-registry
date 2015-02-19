@@ -3,7 +3,7 @@
 Deploy your own damn app:
 
 1. Get an AWS bucket
-2. Push this button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/gregburek/heroku-docker-registry)
+2. Push this button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/thinkidea/heroku-docker-registry)
 3. `docker login https://<your-cool-app-name>.herokuapp.com`
 
 A new app will be deployed to your Heroku account, using AWS s3 as a storage

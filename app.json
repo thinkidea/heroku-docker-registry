@@ -1,8 +1,8 @@
 {
     "name": "A Docker Registry, on Heroku",
     "description": "Runs docker-registry as a Heroku app",
-    "website": "https://github.com/gregburek/heroku-docker-registry",
-    "repository": "https://github.com/gregburek/heroku-docker-registry",
+    "website": "https://github.com/thinkidea/heroku-docker-registry",
+    "repository": "https://github.com/thinkidea/heroku-docker-registry",
     "success_url": "/",
     "keywords": [
         "docker",
@@ -14,9 +14,13 @@
         "heroku-postgresql"
     ],
     "env": {
-        "AWS_KEY": { "description":"Your AWS API key" },
-        "AWS_SECRET": { "description":"Your AWS API secret key" },
-        "AWS_BUCKET": { "description":"Your AWS S3 bucket" },
+        "OS_CONTAINER": { "description": "Cloud Files container name" },
+        "OS_AUTH_URL": { "description": "https://identity.api.rackspacecloud.com/v2.0/ or https://lon.identity.api.rackspacecloud.com/v2.0/" },
+        "OS_USERNAME": { "description": "Cloud Account Username" },
+        "OS_PASSWORD": { "description": "Cloud Account Password" },
+        "OS_TENANT_NAME": { "description": "Cloud Account ID" },
+        "OS_REGION_NAME": { "description": "Region (IAD, ORD, DFW, SYD, HKG, LON)" },
+
         "REGISTRY_USERNAME": {
           "description":"HTTPS Basic Auth Username",
           "generator": "secret"
@@ -28,7 +32,7 @@
         "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
         "DOCKER_REGISTRY_CONFIG": "/app/config.yml",
         "SEARCH_BACKEND": "sqlalchemy",
-        "SETTINGS_FLAVOR": "s3",
+        "SETTINGS_FLAVOR": "swift",
         "STORAGE_PATH": "/registry",
         "STORAGE_REDIRECT": "true"
     }

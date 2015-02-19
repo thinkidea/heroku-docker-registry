@@ -1,4 +1,5 @@
-git+git://github.com/docker/docker-registry.git@388d30366f279470d50bec7895238a71973d72c1
+docker-registry
+docker-registry-driver-swift
 bugsnag
 newrelic
 Flask-cors
